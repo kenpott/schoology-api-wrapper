@@ -5,7 +5,6 @@
  *  4.  GET  | Any user info
  */
 
-/*
 import axios from 'axios';
 import crypto from 'crypto';
 
@@ -24,6 +23,5 @@ axios.get(URL)
   .catch(error => {
     console.error('Error making request:', error.response ? error.response.data : error.message);
   });
-  */
 
   
