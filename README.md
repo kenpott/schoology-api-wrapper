@@ -2,18 +2,18 @@
 
 info
 
-Required dependencies:
+### Required dependencies:
 ```bash
 npm i [deps]
 ```
 
-To install package:
+### To install package:
 
 ```bash
 bun install [package-name]
 ```
 
-Usage:
+# Usage:
 ```bash
 import * from '[package-name]';
 ```
