@@ -1,6 +1,6 @@
-# schoology-api-wrapper
+# schoology-wrapper
 
-info
+A simple npm package to implement the Schoology API.
 
 ### Required dependencies:
 ```bash
@@ -25,7 +25,15 @@ const schoologyClient = new Schoology{
 ```
 ### 2-legged
 ```bash
+// Obtain the authorization URL (typically not needed in 2-legged OAuth).
+const url = schoologyClient.getAuthorizationUrl();
+// Direct user to the authorization URL if needed.
 
+// Call any SchoologyClient methods:
+const assignments = schoologyClient.getAssignments(courseId);
+    .then(response => {
+        console.log('Assignments:', response);
+    })
 ```
 
 ### 3-legged
