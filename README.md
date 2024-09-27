@@ -1,5 +1,7 @@
 # schoology-api-wrapper
 
+info
+
 Required dependencies:
 ```bash
 npm i [deps]
