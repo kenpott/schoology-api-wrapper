@@ -2,7 +2,7 @@
 
 Required dependencies:
 ```bash
-npm i [package-name]
+npm i [deps]
 ```
 
 To install package:
