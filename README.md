@@ -13,4 +13,9 @@ To install package:
 bun install [package-name]
 ```
 
+Usage:
+```bash
+import * from '[package-name]';
+```
+
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
