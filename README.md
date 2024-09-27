@@ -1,15 +1,14 @@
 # schoology-api-wrapper
 
-To install dependencies:
-
+Required dependencies:
 ```bash
-bun install
+npm i [package-name]
 ```
 
-To run:
+To install package:
 
 ```bash
-bun run index.js
+bun install [package-name]
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
