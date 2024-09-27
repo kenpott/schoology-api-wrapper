@@ -17,7 +17,7 @@ bun install [package-name]
 ```javascript
 import { Schoology } from '[package-name]';
 
-const schoologyClient = new Schoology{
+const schoologyClient = new SchoologyClient{
     consumer_key = '',
     consumer_secret = '',
     domain = '',
