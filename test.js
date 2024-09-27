@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const Key = 'efe5a543948026772946115c316323cd05e443b00';
-const Secret = 'e9dc645bf33230645546a37fc9d80348';
+const Key = '';
+const Secret = '';
 
 async function getRequestToken(Key, Secret) {
   const oauthTimestamp = Math.floor(Date.now() / 1000);
