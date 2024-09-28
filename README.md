@@ -25,7 +25,7 @@ const schoologyClient = new SchoologyClient{
 ```
 ### 2-legged
 ```javascript
-// Obtain the authorization URL (typically not needed in 2-legged OAuth).
+// Obtain the authorization URL.
 const url = schoologyClient.getAuthorizationUrl();
 // Direct user to the authorization URL if needed.
 
