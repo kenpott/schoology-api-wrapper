@@ -25,6 +25,10 @@ const schoologyClient = new SchoologyClient{
 ```
 ### 2-legged
 ```javascript
+```
+
+### 3-legged
+```javascript
 // Obtain the authorization URL.
 const url = schoologyClient.getAuthorizationUrl();
 // Direct user to the authorization URL if needed.
@@ -34,11 +38,6 @@ const assignments = schoologyClient.getAssignments(courseId);
     .then(response => {
         console.log('Assignments:', response);
     })
-```
-
-### 3-legged
-```javascript
-
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
