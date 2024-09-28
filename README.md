@@ -1,6 +1,6 @@
 # schoology-wrapper
 
-A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/).
+A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript.
 
 ### Required dependencies:
 ```bash
