@@ -1,43 +1,33 @@
 # schoology-wrapper
+*Currently haven't uploaded to npm*
 
 A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript.
 
 ### Required dependencies:
 ```bash
-npm i [deps]
+npm i axios
 ```
 
 ### To install package:
 
 ```bash
-bun install [package-name]
+bun install schoology-wrapper
 ```
 
 # Usage:
 ```javascript
-import { Schoology } from '[package-name]';
+import SchoologyClient from 'schoology-wrapper';
 
-const schoologyClient = new SchoologyClient{
-    consumer_key = '',
-    consumer_secret = '',
-    domain = '',
-};
-```
-### 2-legged
-```javascript
-```
+const schoologyClient = new SchoologyClient(
+    '', // consumer_key
+    '' // consumer_secret
+);
 
-### 3-legged
-```javascript
-// Obtain the authorization URL.
-const url = schoologyClient.getAuthorizationUrl();
-// Direct user to the authorization URL if needed.
+// Authorize
+const authorizationUrl = await schoologyClient.getAuthorizationUrl();
 
-// Call any SchoologyClient methods:
-const assignments = schoologyClient.getAssignments(courseId);
-    .then(response => {
-        console.log('Assignments:', response);
-    })
+// Retrieve Data
+const courseData = await schoologyClient.getCourse(7354453829)
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
