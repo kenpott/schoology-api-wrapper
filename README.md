@@ -10,7 +10,7 @@ npm i axios
 ### To install package:
 
 ```bash
-bun install [package-name]
+bun install schoology-wrapper
 ```
 
 # Usage:
