@@ -1,4 +1,5 @@
 # schoology-wrapper
+*Currently haven't uploaded to NPM*
 
 A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript.
 
