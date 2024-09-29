@@ -4,7 +4,7 @@ A simple npm package to implement the [Schoology API](https://developers.schoolo
 
 ### Required dependencies:
 ```bash
-npm i [deps]
+npm i axios
 ```
 
 ### To install package:
@@ -15,29 +15,22 @@ bun install [package-name]
 
 # Usage:
 ```javascript
-import { Schoology } from '[package-name]';
+import SchoologyClient from './index';
 
-const schoologyClient = new SchoologyClient{
-    consumer_key = '',
-    consumer_secret = '',
-    domain = '',
+const schoologyClient = new SchoologyClient(
+    '', // consumer_key
+    '' // consumer_secret
+);
+
+// Authorize
+const authorizationUrl = await schoologyClient.getAuthorizationUrl();
+
+// Retrieve Data
+const courseData = await schoologyClient.getCourse(7354453829);
+
+courseTest()
+ 
 };
-```
-### 2-legged
-```javascript
-```
-
-### 3-legged
-```javascript
-// Obtain the authorization URL.
-const url = schoologyClient.getAuthorizationUrl();
-// Direct user to the authorization URL if needed.
-
-// Call any SchoologyClient methods:
-const assignments = schoologyClient.getAssignments(courseId);
-    .then(response => {
-        console.log('Assignments:', response);
-    })
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
