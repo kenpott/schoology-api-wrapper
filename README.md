@@ -15,7 +15,7 @@ bun install schoology-wrapper
 
 # Usage:
 ```javascript
-import SchoologyClient from './index';
+import SchoologyClient from 'schoology-wrapper';
 
 const schoologyClient = new SchoologyClient(
     '', // consumer_key
