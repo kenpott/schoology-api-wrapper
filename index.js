@@ -56,6 +56,17 @@ class SchoologyClient {
     async getCourse(course_id) {
         return await coursesMethods.getCourse(course_id, this._getHeaders());
     }
+
+    /**
+ * Returns information on the course
+ * 
+ * @param {number} course_id 
+ *
+*/
+
+async getAssignments(course_id) {
+    return await coursesMethods.getAssignments(course_id, this._getHeaders());
+}
 }
 
 export default SchoologyClient;
