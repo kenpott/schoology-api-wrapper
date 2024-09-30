@@ -1,7 +1,7 @@
 # schoology-wrapper
 *Currently haven't uploaded to npm*
 
-A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript.
+A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript. If you would like to learn how the schoology API works feel free to check out my [guide](https://github.com/i-nek/Schoology-API-Guide/tree/main).
 ## Important Note
 
 This package does not require user credentials or access tokens. It is designed to function solely with the provided consumer key and consumer secret. 
