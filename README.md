@@ -28,8 +28,8 @@ bun add schoology-wrapper
 import SchoologyClient from 'schoology-wrapper';
 
 const schoologyClient = new SchoologyClient(
-    '', // consumer_key
-    '' // consumer_secret
+    'consumer_key', 
+    'consumer_secret' 
 );
 
 // Authorize
