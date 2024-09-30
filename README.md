@@ -1,17 +1,34 @@
 # schoology-wrapper
 *Currently haven't uploaded to npm*
 
-A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript.
+A simple npm package to implement the [Schoology API](https://developers.schoology.com/api/) using javascript. If you would like to learn how the schoology API works feel free to check out my [guide](https://github.com/i-nek/Schoology-API-Guide/tree/main).
+## Important Note
 
-### Required dependencies:
+This package does not require user credentials or access tokens. It is designed to function solely with the provided consumer key and consumer secret. 
+
+### Access Limitations
+- Since the package operates without user credentials, it can only access data that is available through the Schoology API using the provided keys. This means functionalities are limited to what is publicly accessible or what your Schoology API credentials can retrieve without user-specific authentication.
+
+Please ensure that you have the necessary permissions for the data you wish to access using your Schoology API credentials.
+
+## Required dependencies:
 ```bash
 npm i axios
+
 ```
 
-### To install package:
+## To install package:
 
 ```bash
-bun install schoology-wrapper
+# Using npm
+npm install schoology-wrapper
+
+# Using yarn
+yarn add schoology-wrapper
+
+# Using bun
+bun add schoology-wrapper
+
 ```
 
 # Usage:
@@ -19,15 +36,15 @@ bun install schoology-wrapper
 import SchoologyClient from 'schoology-wrapper';
 
 const schoologyClient = new SchoologyClient(
-    '', // consumer_key
-    '' // consumer_secret
+    'consumer_key', 
+    'consumer_secret' 
 );
 
 // Authorize
 const authorizationUrl = await schoologyClient.getAuthorizationUrl();
 
 // Retrieve Data
-const courseData = await schoologyClient.getCourse(7354453829)
+const courseData = await schoologyClient.getCourse('course_id')
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
