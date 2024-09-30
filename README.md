@@ -5,7 +5,14 @@ A simple npm package to implement the [Schoology API](https://developers.schoolo
 
 ### Required dependencies:
 ```bash
-npm i axios
+# Using npm
+npm install schoology-wrapper
+
+# Using yarn
+yarn add schoology-wrapper
+
+# Using bun
+bun add schoology-wrapper
 ```
 
 ### To install package:
