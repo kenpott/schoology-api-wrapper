@@ -7,7 +7,7 @@ async function getAuthorizationUrl() {
         let result = response.data.match(/oauth_token=([^&]+)&oauth_token_secret=([^&]+)&xoauth_token_ttl=(\d+)/);
         let token = result[1];
         let token_secret = result[2];
-        const URL2 = `https://lms.lausd.net/oauth/authorize?oauth_consumer_key=${this.consumer_key}&oauth_token=${token}&oauth_token_secret=${token_secret}`
+        const URL2 = `${this.domain}oauth/authorize?oauth_consumer_key=${this.consumer_key}&oauth_token=${token}&oauth_token_secret=${token_secret}`
         return URL2;
     }
 

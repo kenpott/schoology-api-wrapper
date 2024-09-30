@@ -5,9 +5,10 @@ import * as userMethods from './modules/user.js';
 import * as groupMethods from './modules/groups.js';
 
 class SchoologyClient {
-    constructor(consumer_key, consumer_secret) {
+    constructor(consumer_key, consumer_secret, domain) {
         this.consumer_key = consumer_key;
         this.consumer_secret = consumer_secret;
+        this.domain = domain;
 
         Object.assign(this,
             authMethods,
