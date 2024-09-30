@@ -27,7 +27,7 @@ const schoologyClient = new SchoologyClient(
 const authorizationUrl = await schoologyClient.getAuthorizationUrl();
 
 // Retrieve Data
-const courseData = await schoologyClient.getCourse(7354453829)
+const courseData = await schoologyClient.getCourse('course_id')
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
