@@ -41,7 +41,7 @@ const schoologyClient = new SchoologyClient(
     'domain', // example: https://lms.lausd.net/ 
 );
 
-// Authorize
+// Authorize (WIP)
 const authorizationUrl = await schoologyClient.getAuthorizationUrl();
 
 // Retrieve Data
