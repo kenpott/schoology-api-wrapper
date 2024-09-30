@@ -37,7 +37,8 @@ import SchoologyClient from 'schoology-wrapper';
 
 const schoologyClient = new SchoologyClient(
     'consumer_key', 
-    'consumer_secret' 
+    'consumer_secret',
+    'domain', // example: https://lms.lausd.net/ 
 );
 
 // Authorize
