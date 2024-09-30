@@ -8,15 +8,14 @@ class SchoologyClient {
     constructor(consumer_key, consumer_secret) {
         this.consumer_key = consumer_key;
         this.consumer_secret = consumer_secret;
-        this.headers = {};
-        
+
         Object.assign(this,
             authMethods,
             coursesMethods,
             userMethods,
             groupMethods,
         );
-    }
+}
 
     _getHeaders() {
         return {
@@ -31,70 +30,50 @@ class SchoologyClient {
         };
     }  
 
-    async getUser(user_id) {
-        return await userMethods.getUser(user_id, this._getHeaders());
-    }
-
-// ------------------------------------------------------------------- \\
-
     async getAuthorizationUrl() {
-        return await authMethods.getAuthorizationUrl(this.consumer_key, this.consumer_secret);
+        authMethods.getAuthorizationUrl(this.consumer_key, this.consumer_secret);
     }
-
     async makeRequest(endpoint, method) {
-        return await authMethods.makeRequest(endpoint, method);
-    } 
-
-// ------------------------------------------------------------------- \\
-
+        authMethods.getAuthorizationUrl(endpoint, method, this._getHeaders);
+    }
     async getCourse(course_id) {
-        return await coursesMethods.getCourse(course_id, this._getHeaders());
+        coursesMethods.getCourse(course_id, this._getHeaders);
     }
-
-    async getFolders(course_id) {
-        return await coursesMethods.getFolders(course_id, this._getHeaders());
-    }
-
-    async getAssignments(course_id) {
-        return await coursesMethods.getAssignments(course_id, this._getHeaders());
-    }
-
-    async getAssignment(course_id, assignment_id) {
-        return await coursesMethods.getAssignment(course_id, assignment_id, this._getHeaders());
-    }
-
-    async getUpdates(course_id) {
-        return await coursesMethods.getUpdates(course_id, this._getHeaders());
-    }
-
     async getCourseMembers(course_id) {
-        return await coursesMethods.getCourseMembers(course_id, this._getHeaders());
+        coursesMethods.getCourseMembers(course_id, this._getHeaders);
     }
-
     async getCourseMember(course_id, user_id) {
-        return await coursesMethods.getCourseMember(course_id, user_id, this._getHeaders());
+        coursesMethods.getCourseMember(course_id, user_id, this._getHeaders);
     }
-
-// ------------------------------------------------------------------- \\
-
+    async getCourseFolders(course_id) {
+        coursesMethods.getCourseFolders(course_id, this._getHeaders);
+    }
+    async getCourseAssignments(course_id) {
+        coursesMethods.getCourseAssignments(course_id, this._getHeaders);
+    }
+    async getCourseAssignment(course_id, assignment_id) {
+        coursesMethods.getCourseAssignment(course_id, assignment_id, this._getHeaders);
+    }
+    async getCourseUpdates(course_id) {
+        coursesMethods.getCourseUpdates(course_id, this._getHeaders);
+    }
     async getGroup(group_id) {
-        return await groupMethods.getGroup(group_id, this._getHeaders());
+        coursesMethods.getGroup(group_id, this._getHeaders);
     }
-
-    async getGroupMembers(group_id) {
-        return await groupMethods.getGroupMembers(group_id, this._getHeaders());
+    async getGroupMembers(course_id) {
+        coursesMethods.getCourseMembers(course_id, this._getHeaders);
     }
-
-    async getGroupMember(group_id, user_id) {
-        return await groupMethods.getGroupMembers(group_id, user_id, this._getHeaders());
+    async getGroupMember(course_id, user_id) {
+        coursesMethods.getCourseMember(course_id, user_id, this._getHeaders);
     }
-
-    async getGroupUpdates(group_id) {
-        return await groupMethods.getGroupUpdates(group_id, this._getHeaders());
+    async getGroupUpdates(course_id) {
+        coursesMethods.getGroupUpdates(course_id, this._getHeaders);
     }
-
-    async getGroupResources(group_id) {
-        return await groupMethods.getGroupResources(group_id, this._getHeaders());
+    async getGroupResources(course_id) {
+        coursesMethods.getGroupResources(course_id, this._getHeaders);
+    }
+    async getUser(user_id) {
+        coursesMethods.getCourse(user_id, this._getHeaders);
     }
 }
 
