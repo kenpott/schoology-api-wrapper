@@ -1,13 +1,24 @@
 {
   "name": "schoology-api-wrapper",
   "version": "1.0.5",
+  "description": "A simple npm package to implement the Schoology API using JavaScript.",
   "module": "index.js",
   "type": "module",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.7.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuyaken/schoology-api-wrapper.git"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "author": "kuyaken",
+  "keywords": [
+    "schoology",
+    "api",
+    "javascript"
+  ]
 }
