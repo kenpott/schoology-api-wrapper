@@ -5,5 +5,8 @@
   "type": "module",
   "dependencies": {
     "axios": "^1.7.7"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
