@@ -9,12 +9,6 @@ This package does not require user credentials or access tokens. It is designed 
 
 Please ensure that you have the necessary permissions for the data you wish to access using your Schoology API credentials.
 
-## Required dependencies:
-```bash
-npm i axios
-
-```
-
 ## To install package:
 
 ```bash
@@ -38,9 +32,6 @@ const schoologyClient = new SchoologyClient(
     'consumer_secret',
     'domain', // example: https://lms.lausd.net/ 
 );
-
-// Authorize (WIP)
-const authorizationUrl = await schoologyClient.getAuthorizationUrl();
 
 // Retrieve Data
 const courseData = await schoologyClient.getCourse('course_id')
