@@ -1,4 +1,4 @@
-import { makeRequest } from "./authentication.js";
+import { makeRequest } from "./helpers.js";
 
 async function getGroup(group_id) {
     const result = await makeRequest(`/groups/${group_id}`, 'GET', this._getHeaders());

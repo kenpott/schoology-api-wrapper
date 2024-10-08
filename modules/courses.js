@@ -1,4 +1,4 @@
-import { makeRequest } from "./authentication.js";
+import { makeRequest } from "./helpers.js";
 
 async function getCourse(course_id) {
     const result = await makeRequest(`/sections/${course_id}`, 'GET', this._getHeaders());

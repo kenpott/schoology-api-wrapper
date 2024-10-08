@@ -1,4 +1,4 @@
-import { makeRequest } from "./authentication.js";
+import { makeRequest } from "./helpers.js";
 const axios = require("axios");
 
 async function getUser(user_id) {

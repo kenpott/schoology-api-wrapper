@@ -1,5 +1,5 @@
 import crypto from 'crypto';
-import * as authMethods from './modules/authentication.js';
+import * as authMethods from './modules/helpers.js';
 import * as coursesMethods from './modules/courses.js';
 import * as userMethods from './modules/user.js';
 import * as groupMethods from './modules/groups.js';
