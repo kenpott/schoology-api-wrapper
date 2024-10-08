@@ -13,13 +13,13 @@ Please ensure that you have the necessary permissions for the data you wish to a
 
 ```bash
 # Using npm
-npm install schoology-wrapper
+npm install schoology-api-wrapper
 
 # Using yarn
-yarn add schoology-wrapper
+yarn add schoology-api-wrapper
 
 # Using bun
-bun add schoology-wrapper
+bun add schoology-api-wrapper
 
 ```
 
