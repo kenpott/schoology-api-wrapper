@@ -37,6 +37,9 @@ class SchoologyClient {
     async makeRequest(endpoint, method) {
         authMethods.getAuthorizationUrl(endpoint, method, this._getHeaders);
     }
+    async requestCookie(reason) {
+        authMethods.requestCookie(reason);
+    }
     async getCourse(course_id) {
         coursesMethods.getCourse(course_id, this._getHeaders);
     }
@@ -75,6 +78,9 @@ class SchoologyClient {
     }
     async getUser(user_id) {
         coursesMethods.getCourse(user_id, this._getHeaders);
+    }
+    async getNotifications(name, value, site) {
+        userMethods.getNotifications(name, value, site);
     }
 }
 
