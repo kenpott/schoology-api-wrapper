@@ -82,6 +82,15 @@ class SchoologyClient {
     async getNotifications(name, value, site) {
         userMethods.getNotifications(name, value, site);
     }
+    async getCourses(name, value, site) {
+        userMethods.getCourses(name, value, site);
+    }
+    async getGroups(name, value, site) {
+        userMethods.getGroups(name, value, site);
+    }
+    async getMessages(name, value, site) {
+        userMethods.getMessages(name, value, site);
+    }
 }
 
 export default SchoologyClient;

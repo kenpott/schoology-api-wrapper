@@ -11,7 +11,41 @@ async function getNotifications(name, value, site) {
         method: "GET",
         url: `${site}/iapi2/site-navigation/notifications`,
         headers: {
+            "Cookie": `${name}=${value}`,
+            "Accept": `application/json`
+        }
+    })
+    return result.data
+}
+
+async function getCourses(name, value, site) {
+    const result = await axios.request({
+        method: "Get",
+        url: `${site}/iapi2/site-navigation/courses`,
+        headers: {
             "Cookie": `${name}=${value}`
+        }
+    })
+    return result.data.data
+}
+
+async function getGroups(name, value, site) {
+    const result = await axios.request({
+        method: "Get",
+        url: `${site}/iapi2/site-navigation/groups`,
+        headers: {
+            "Cookie": `${name}=${value}`
+        }
+    })
+    return result.data.data
+}
+
+async function getMessages(name, value, site) {
+    const result = await axios.request({
+        method: "Get",
+        url: `${site}/iapi2/site-navigation/messages`,
+        headers: {
+            "Cookie": `${name}=${value}`,
         }
     })
     return result.data
@@ -19,5 +53,8 @@ async function getNotifications(name, value, site) {
 
 export {
     getUser,
-    getNotifications
+    getNotifications,
+    getCourses,
+    getGroups,
+    getMessages
 }
