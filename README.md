@@ -52,7 +52,6 @@ const data = await schoologyClient.requestCookie("reason");
 // The requestCookie returns 3 values: the sidName, sidValue, site,
 const notifications = await schoologyClient.getNotifications(data[1], data[2], data[3]);
 console.log(notifications);
-);
 ```
 
 This project was created using `bun init` in bun v1.1.28. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
