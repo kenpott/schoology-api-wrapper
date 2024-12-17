@@ -26,7 +26,7 @@ bun add schoology-api-wrapper
 # Usage:
 ## `consumer_key` and `consumer_secret`
 ```javascript
-import SchoologyClient from 'schoology-wrapper';
+import SchoologyClient from 'schoology-api-wrapper';
 
 const schoologyClient = new SchoologyClient(
     'consumer_key', 
@@ -39,7 +39,7 @@ const courseData = await schoologyClient.getCourse('course_id')
 ```
 User's cookie
 ```javascript
-import SchoologyClient from 'schoology-wrapper';
+import SchoologyClient from 'schoology-api-wrapper';
 
 const schoologyClient = new SchoologyClient(
     'consumer_key', 
