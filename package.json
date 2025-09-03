@@ -1,6 +1,6 @@
 {
   "name": "schoology-api-wrapper",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "A wrapper for the Schoology API",
   "main": "dist/index.js",          
   "types": "dist/index.d.ts",       

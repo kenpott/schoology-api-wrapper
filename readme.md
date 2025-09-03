@@ -61,40 +61,40 @@ console.log(members);
 
 ### Courses
 
-- `getCourse(course_id: number): Promise<object>`  
+- `getCourse(course_id: number): Promise<JSON>`  
   Get a single course by ID.
 
-- `getCourseFolders(course_id: number): Promise<object>`  
+- `getCourseFolders(course_id: number): Promise<JSON>`  
   Get all folders in a course.
 
-- `getCourseAssignments(course_id: number): Promise<object>`  
+- `getCourseAssignments(course_id: number): Promise<JSON>`  
   Get all assignments in a course.
 
-- `getCourseAssignment(course_id: number, assignment_id: number): Promise<object>`  
+- `getCourseAssignment(course_id: number, assignment_id: number): Promise<JSON>`  
   Get a specific assignment in a course.
 
-- `getCourseUpdates(course_id: number): Promise<object>`  
+- `getCourseUpdates(course_id: number): Promise<JSON>`  
   Get updates for a course.
 
-- `getCourseMembers(course_id: number): Promise<object>`  
+- `getCourseMembers(course_id: number): Promise<JSON>`  
   Get all members of a course.
 
-- `getCourseMember(course_id: number, user_id: number): Promise<object>`  
+- `getCourseMember(course_id: number, user_id: number): Promise<JSON>`  
   Get a specific member in a course.
 
 ### Groups
 
-- `getGroup(group_id: number): Promise<object>`  
+- `getGroup(group_id: number): Promise<JSON>`  
   Get a single group by ID.
 
-- `getGroupMembers(group_id: number): Promise<object>`  
+- `getGroupMembers(group_id: number): Promise<JSON>`  
   Get all members of a group.
 
-- `getGroupMember(group_id: number, user_id: number): Promise<object>`  
+- `getGroupMember(group_id: number, user_id: number): Promise<JSON>`  
   Get a specific member in a group.
 
-- `getGroupUpdates(group_id: number): Promise<object>`  
+- `getGroupUpdates(group_id: number): Promise<JSON>`  
   Get updates for a group.
 
-- `getGroupResources(group_id: number): Promise<object>`  
+- `getGroupResources(group_id: number): Promise<JSON>`  
   Get resources for a group.
