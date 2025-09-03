@@ -25,6 +25,7 @@ npm install schoology-api-wrapper
 
 # Using yarn
 yarn add schoology-api-wrapper
+```
 
 ---
 
@@ -52,6 +53,7 @@ console.log(assignments);
 const group = await sgy.getGroup(67890);
 const members = await sgy.getGroupMembers(67890);
 console.log(members);
+```
 
 ---
 
@@ -96,4 +98,3 @@ console.log(members);
 
 - `getGroupResources(group_id: number): Promise<object>`  
   Get resources for a group.
-
