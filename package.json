@@ -1,23 +1,26 @@
 {
   "name": "schoology-api-wrapper",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "description": "A wrapper for the Schoology API",
+  "main": "dist/index.js",          
+  "types": "dist/index.d.ts",       
+  "type": "module",               
+  "files": ["dist"],      
   "scripts": {
     "build": "tsc",
-    "test": ""
+    "watch": "tsc --watch",
+    "test": "echo \"No tests yet\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kenpott/schoology-api-wrapper.git"
   },
-  "author": "",
+  "author": "kenpott",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kenpott/schoology-api-wrapper/issues"
   },
   "homepage": "https://github.com/kenpott/schoology-api-wrapper#readme",
-  "description": "",
   "devDependencies": {
     "typescript": "^5.9.2"
   },
