@@ -35,23 +35,23 @@ yarn add schoology-api-wrapper
 import { Schoology } from "schoology-api-wrapper";
 
 // Initialize with your API keys and domain
-const sgy = new Schoology(
+const schoologyClient = new Schoology(
   "YOUR_CONSUMER_KEY",
   "YOUR_CONSUMER_SECRET",
   "lms.lausd.net"
 );
 
 // Get a course by ID
-const course = await sgy.getCourse(12345);
+const course = await schoologyClient.getCourse(12345);
 console.log(course);
 
 // Get assignments for a course
-const assignments = await sgy.getCourseAssignments(12345);
+const assignments = await schoologyClient.getCourseAssignments(12345);
 console.log(assignments);
 
 // Get a group and its members
-const group = await sgy.getGroup(67890);
-const members = await sgy.getGroupMembers(67890);
+const group = await schoologyClient.getGroup(67890);
+const members = await schoologyClient.getGroupMembers(67890);
 console.log(members);
 ```
 
