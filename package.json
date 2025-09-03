@@ -1,32 +1,27 @@
 {
   "name": "schoology-api-wrapper",
-  "version": "1.1.11",
-  "description": "A simple npm package to implement the Schoology API using JavaScript.",
-  "module": "index.js",
+  "version": "1.0.0",
+  "main": "index.js",
   "type": "module",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^1.7.7",
-    "puppeteer": "^23.5.1",
-    "regedit": "^5.1.3"
+  "scripts": {
+    "build": "tsc",
+    "test": ""
   },
   "repository": {
-    "type": "github",
-    "url": "https://github.com/i-nek/schoology-api-wrapper"
+    "type": "git",
+    "url": "git+https://github.com/kenpott/schoology-api-wrapper.git"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenpott/schoology-api-wrapper/issues"
   },
-  "author": "kuyaken",
-  "keywords": [
-    "schoology",
-    "api",
-    "javascript"
-  ],
-  "scripts": {
-    "test": "test.js"
-  },
+  "homepage": "https://github.com/kenpott/schoology-api-wrapper#readme",
+  "description": "",
   "devDependencies": {
-    "jest": "^29.0.0"
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "axios": "^1.11.0"
   }
 }
